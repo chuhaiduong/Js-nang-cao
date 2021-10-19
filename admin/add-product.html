@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+</head>
+<body>
+    <form class="min-h-screen p-6 bg-gray-100 flex items-center justify-center" id="form-add" >
+        <div class="container max-w-screen-lg mx-auto">
+          <div>
+            <h2 class="font-semibold text-xl text-gray-600 mb-6">Welcome to more products</h2>
+            
+            <div class="bg-white rounded shadow-lg p-4 px-4 md:p-8 mb-6">
+              <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 lg:grid-cols-3">
+                <div class="text-gray-600">
+                  <p class="font-medium text-lg">Hãy thêm sản phẩm của bạn tại đây!</p>
+                  <p>Vui lòng điền vào các trường</p>
+                  <p>(Please fill out all the fields.)</p>
+                </div>
+      
+                <div class="lg:col-span-2">
+                  <div class="grid gap-4 gap-y-2 text-sm grid-cols-1 md:grid-cols-5">
+                    <div class="md:col-span-5">
+                      <label for="full_name"> Name</label>
+                      <input type="text" name="" id="title" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="Tên Sản Phẩm" />
+                    </div>
+      
+                    <div class="md:col-span-5">
+                      <label for="email">Image</label>
+                      <input type="text" name="" id="image" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="image" />
+                    </div>
+      
+                    <div class="md:col-span-3">
+                      <label for="address">Price</label>
+                      <input type="number" name="" id="price" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="Giá" />
+                    </div>
+      
+                    <div class="md:col-span-2">
+                      <label for="city">Discount</label>
+                      <input type="number" name="city" id="city" class="h-10 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="Giảm Giá" />
+                    </div>
+
+                    <div class="md:col-span-5">
+                        <label for="email">Description</label>
+                        <input type="text" name="email" id="description" class="h-20 border mt-1 rounded px-4 w-full bg-gray-50" value="" placeholder="Mô Tả" />
+                      </div>
+                    
+      
+                    
+      
+                    
+      
+                    <div class="md:col-span-5 text-right">
+                      <div class="inline-flex items-end">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
+                      </div>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <a href="../index.html" target="_blank" class="md:absolute bottom-0 right-0 p-4 float-right">
+            <img src="https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-3.svg" alt="Buy Me A Coffee" class="transition-all rounded-full w-14 -rotate-45 hover:shadow-sm shadow-lg ring hover:ring-4 ring-white">
+          </a>
+        </div>
+      </form>
+
+
+    <!-- <form action="" id="form-add">
+        <input type="text" placeholder="title" id="title">
+        <input type="text" placeholder="image" id="image">
+        <button type="submit">ADD</button>
+    </form> -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const formAdd = document.querySelector('#form-add');
+        formAdd.addEventListener('submit',function(e){
+            e.preventDefault();
+
+                const post ={
+                    id:Math.random().toString(5).substr(2),    
+                    title:document.querySelector('#title').value,                       
+                    image: document.querySelector('#image').value,
+                    price:document.querySelector('#price').value,
+                    description:document.querySelector('#description').value
+                };  
+                console.log(post);
+                 axios.post('http://localhost:3000/posts',post)
+                .then(response => consolog.log(response))
+                .then(() => alert('ban da them sp thanh cong'))
+        });
+    </script>
+     
+</body>
+</html>

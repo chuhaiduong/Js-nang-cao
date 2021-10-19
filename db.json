@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": "2",
+      "title": "Product Name",
+      "image": "https://images.unsplash.com/photo-1508423134147-addf71308178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80",
+      "price": "9999",
+      "description": "sản phẩm đẹp"
+    },
+    {
+      "id": "3",
+      "title": "Product Name",
+      "image": "https://images.unsplash.com/photo-1449247709967-d4461a6a6103?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80",
+      "price": "9999",
+      "description": "sản phẩm đẹp"
+    },
+    {
+      "id": "4",
+      "title": "Product Name",
+      "image": "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80",
+      "price": "9999",
+      "description": "sản phẩm đẹp"
+    },
+    {
+      "id": "5",
+      "title": "Product Name",
+      "image": "https://images.unsplash.com/photo-1467949576168-6ce8e2df4e13?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80",
+      "price": "9999",
+      "description": "sản phẩm đẹp"
+    },
+    {
+      "id": "6",
+      "title": "Product Name",
+      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80",
+      "price": "9999",
+      "description": "sản phẩm đẹp"
+    },
+    {
+      "id": "7",
+      "title": "Product Name",
+      "image": "https://images.unsplash.com/photo-1550837368-6594235de85c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80",
+      "price": "9999",
+      "description": "sản phẩm đẹp"
+    },
+    {
+      "id": "8",
+      "title": "Product Name",
+      "image": "https://images.unsplash.com/photo-1551431009-a802eeec77b1?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&h=400&q=80",
+      "price": "9999",
+      "description": "sản phẩm đẹp"
+    },
+    {
+      "id": "0010143304424102212020302",
+      "title": "dat",
+      "image": "https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80",
+      "price": "999",
+      "description": "đẹp trai"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "email": "hihi@gmail.com",
+      "password": "$2a$10$44DbTvTImRuHh3s1R/FW0udAoYvKaDT7EzkiZOjKf4/4EVfdDZ5sO",
+      "id": 1
+    },
+    {
+      "email": "duong@gmail.com",
+      "password": "$2a$10$JhYUsxE9FZwJx.oj/ZSkd.JmMQH1bAWnXfMNW5FOB4A0OMmbWEju.",
+      "id": 2
+    },
+    {
+      "email": "dat@gmail.com",
+      "password": "$2a$10$p5.eFwhk6Yjl9wrsdw2jC.mcRMBRMM2JlPHCePQLfPPvcaCWu/q0K",
+      "id": 3
+    }
+  ]
+}
